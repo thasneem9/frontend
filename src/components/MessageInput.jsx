@@ -44,6 +44,7 @@ const MessageInput = ({ setMessages }) => {
 				headers: {
 					"Content-Type": "application/json",
 				},
+				credentials: 'include',
 				body: JSON.stringify({
 					message: messageText,
 					recipientId: selectedConversation.userId,
