@@ -14,6 +14,7 @@ const SuggestedUsers = () => {
 			try {
 				const res = await fetch(import.meta.env.VITE_BACKEND_URL+"/api/users/suggested");
 				const data = await res.json();
+				console.log("Fetched Data:", data);
 				if (data.error) {
 					showToast("Error", data.error, "error");
 					return;
