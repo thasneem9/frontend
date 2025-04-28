@@ -17,6 +17,7 @@ const HomePage = () => {
 			try {
 				const res = await fetch(import.meta.env.VITE_BACKEND_URL+"/api/users/feed", {
 					method: "GET",
+					credentials: "include",
 
 				});
 				const data = await res.json();
