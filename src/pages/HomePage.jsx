@@ -15,7 +15,7 @@ const HomePage = () => {
 			setLoading(true);
 			setPosts([]);
 			try {
-				const res = await fetch(import.meta.env.VITE_BACKEND_URL+"/api/users/feed", {
+				const res = await fetch(import.meta.env.VITE_BACKEND_URL+"/api/posts/feed", {
 					method: "GET",
 					credentials: "include",
 
